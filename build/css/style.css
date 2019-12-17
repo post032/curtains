@@ -147,7 +147,7 @@ input[type="radio"].visually-hidden {
   color: #0b4091;
   text-align: left;
   font-weight: 300;
-  width: 100%;
+  border-bottom: 1px solid #c7d3e6;
 }
 .link-t {
   font-size: 16.667px;
@@ -276,7 +276,7 @@ input[type="radio"].visually-hidden {
   color: #0b4091;
   text-align: left;
   font-weight: 300;
-  width: 100%;
+  border-bottom: 1px solid #c7d3e6;
 }
 .art__img {
   display: -webkit-box;
@@ -595,7 +595,7 @@ input[type="radio"].visually-hidden {
   color: #0b4091;
   text-align: left;
   font-weight: 300;
-  width: 100%;
+  border-bottom: 1px solid #c7d3e6;
 }
 .company__idea {
   padding-top: 8px;
@@ -778,7 +778,7 @@ input[type="radio"].visually-hidden {
   color: #0b4091;
   text-align: left;
   font-weight: 300;
-  width: 100%;
+  border-bottom: 1px solid #c7d3e6;
   text-align: right;
 }
 .review__write {
@@ -872,7 +872,7 @@ input[type="radio"].visually-hidden {
   color: #0b4091;
   text-align: left;
   font-weight: 300;
-  width: 100%;
+  border-bottom: 1px solid #c7d3e6;
   font-style: italic;
 }
 .review__lists {
