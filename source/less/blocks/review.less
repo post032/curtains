@@ -26,7 +26,6 @@
   align-items: center;
   margin-bottom: 8px;
 }
-
 // .review__filter div label {
 //   .text;
 // }
@@ -73,13 +72,11 @@
 .review__write {
   .button-name;
   .button;
-  margin-bottom: 20px;
 }
 
 .review__slider img {
   height: 130px;
 }
-
 .review__show {
   display: none;
 }
@@ -90,8 +87,10 @@
   color: rgb(44, 11, 47);
   text-transform: uppercase;
   line-height: 1.2;
+  letter-spacing: 2px;
   text-align: center;
   font-weight: 300;
+  margin-bottom: 18px;
 }
 @media (min-width: 325px) {
   .review__slider img {
@@ -158,20 +157,22 @@
 
 .review__list {
   width: 40%;
-  padding: 15px 15px 6px;
+  padding: 15px 15px 13px;
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(230, 213, 233);
 }
+
 .review__write-radio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-bottom: 4px;
 }
+
 .review__write-radio div {
-  width: 115px;
+  width: 100px;
   min-height: 131px;
   display: flex;
   flex-direction: row;
@@ -199,28 +200,27 @@
   width: 100%;
 }
 
-.review__write-block {
-  flex-direction: row;
-}
-
-.review__write-name span{
+.review__write-name span {
   color: #939292;
   text-transform: lowercase;
 }
 
 .review__block-input {
+  font-size: 16px;
   border: 1px rgb(232, 232, 232) solid;
   background-color: rgb(255, 255, 255);
-  box-shadow: inset 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 33px;
 }
+
 .review__write-file {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
+
 .review__file-input {
   font-size: 0;
   line-height: 0;
@@ -246,25 +246,28 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .review__write-text textarea {
+  font-size: 16px;
   border: 1px rgb(232, 232, 232) solid;
   background-color: rgb(255, 255, 255);
-  box-shadow: inset 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
-  width: 260px;
-  min-height: 141px;
+  width: 240px;
+  min-height: 116px;
 }
 
 .review__write-submit {
   display: flex;
   flex-direction: column;
+
 }
 
-.review__submit-input{
+.review__submit-input {
   background-image: linear-gradient(180deg, #5b2c60, #8f6c94);
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   width: 100%;
   min-height: 40px;
@@ -280,6 +283,8 @@
 .review__write-checkbox {
   display: flex;
   flex-direction: row;
+  margin-left: 9px;
+  margin-top: 11px;
 }
 
 .review__write-checkbox-label {
@@ -287,6 +292,7 @@
   font-family: "Ubuntu";
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
+  text-indent: 20px;
 }
 
 .review__checkbox-input {
@@ -299,17 +305,116 @@
 }
 
 .review__write-name {
-    .text;
-    text-transform: uppercase;
-    font-weight: normal;
-    color: #000000;
-  }
+  .text;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #000000;
+}
 
-  .review__show2 {
-    display: none;
-  }
+.review__show2 {
+  display: none;
+}
 
+.review__write-checkbox input,
+.review__write-radio input,
+.review__write-file input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.review__checkbox-input + label,
+.review__radio-input + label,
+.review__file-input + label {
+  position: relative;
+  top: 0;
+  left: 2px;
+  cursor: pointer;
+}
+.review__checkbox-input + label::before {
+  content: "";
+  display: inline-block;
+  border: 1px rgb(137, 137, 137) solid;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+}
+.review__radio-input + label::before {
+  content: "";
+  display: block;
+  border: 1px rgb(162, 162, 162) solid;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 44px;
+  left: -12px;
+  width: 8px;
+  height: 8px;
+}
+
+.review__file-input + label::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-right: 4px;
+  border: 1px rgb(232, 232, 232) solid;
+  background-color: rgb(255, 255, 255);
+  background-image: url("../img/plus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+.review__checkbox-input + label::after,
+.review__radio-input:checked + label::after,
+.review__file-input:checked + label::after {
+  opacity: 1;
+}
+
+.review__checkbox-input + label::after {
+  content: "";
+  background-color: rgb(111, 111, 111);
+  position: absolute;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  transform: rotate(45deg);
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.review__radio-input + label::after {
+  content: "";
+  border-radius: 50%;
+  background-color: rgb(111, 111, 111);
+  position: absolute;
+  top: 46px;
+  left: -16px;
+  width: 6px;
+  height: 6px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.review__file-input + label::after {
+  content: "";
+  position: absolute;
+  bottom: 26px;
+  left: 2px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  opacity: 0;
+  transition: all 0.2s;
+}
 @media (min-width: @size-tablet) {
+  .review__write-block {
+    flex-direction: row;
+  }
   .review__title {
     .title-t;
     margin-bottom: 12px;
@@ -330,6 +435,7 @@
 
   .review__about {
     .text-t;
+    // margin-bottom: 10px;
   }
 
   .review__text {
@@ -342,7 +448,6 @@
     .link-t;
   }
 
-
   .review__filter button {
     .link-t;
     border: none;
@@ -351,8 +456,7 @@
   }
 
   .review__list {
-    width: 29%;
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
   .review__filters {
@@ -365,31 +469,60 @@
 
   .review__write-submit {
     flex-direction: row;
+    margin-left: 15px;
   }
 
   .review__write-text textarea {
     width: 660px;
   }
 
-  .review__submit-input{
-    width: 304px;
+  .review__submit-input {
+    width: 397px;
   }
 
   .review__write-name {
-      .text-t;
-      text-transform: uppercase;
-      font-weight: normal;
-      color: #000000;
-    }
+    .text-t;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #000000;
+    margin-bottom: 3px;
+    margin-top: 0;
+  }
 
-    .review__write2 {
-      align-items: flex-start;
-    }
+  .review__write2 {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .review__info .review__info-name {
+    .title-min-t;
+    margin-top: 8px;
+  }
+
+  .review__slider .slick-dots li button:before {
+    font-size: 37px;
+  }
+
+  .review__slider .slick-list {
+    margin-bottom: 6px;
+  }
+
+  .review__lists {
+    justify-content: space-between;
+  }
+
+  // .review__radio-input+label::before {
+  //   left: -12px;
+  // }
 }
 @media (min-width: @size-desktop) {
+  .review__radio-input+label::before {
+    left: -18px;
+  }
   .review__write {
     display: none;
   }
+
   .review__block {
     margin: 0;
     width: 200px;
@@ -410,9 +543,12 @@
   }
 
   .review__slider,
-  .review__slider .slick-dots,
-  .review__slider img {
+  .review__slider .slick-dots {
     width: 100%;
+  }
+
+  .review__slider img {
+    width: 220px;
   }
 
   .review__blocks {
@@ -431,7 +567,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   .review__show-button {
@@ -442,6 +578,7 @@
     font-family: "Ubuntu";
     line-height: 1.2;
     text-align: right;
+    margin: 0 4px;
   }
 
   .review__show-button2 {
@@ -459,14 +596,63 @@
     margin: 3.5px;
   }
 
+  .review__slider img {
+    width: 220px;
+  }
+
+  .review__list {
+    width: 220px;
+  }
+  .review__blocks {
+    width: 75%;
+  }
+}
+
+  @media (min-width: 1310px) {
+
+  .review__list,
+  .review__list img {
+    width: 260px;
+  }
 
 }
-@media (min-width: 1580px) {
+@media (min-width: 1413px) {
+
+.review__list,
+.review__list img {
+  width: 307px;
+}
+
+}
+@media (min-width: 1560px) {
   .review {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto;
+  }
+  .review__slider img {
+    width: 345px;
+  }
+  .review__list {
+    width: 345px;
+  }
+
+  .review__write-files {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  .review__block-input {
+    width: 490px;
+    padding-left: 13px;
+  }
+
+  .review__write-block div {
+    width: 98%;
+    margin-left: 13px;
   }
 
   .review__slider img {
@@ -479,12 +665,20 @@
 
   .review__write2 {
     max-width: 1180px;
-    padding: 60px;
-    background: url(../img/bg-o.jpg) no-repeat;
-    background-size: cover;
+    padding: 10px 60px 60px;
+    background: url("../img/bg-o.jpg") no-repeat;
+    background-size: auto;
   }
 
   .review__write-text textarea {
-    width: 1034px;
+    width: 1008px;
   }
+.review__write-radio{
+  justify-content: flex-start;
+}
+  .review__write-radio div {
+    margin-right: 30px;
+      margin-top: 23px;
+      margin-left: 15px;
+}
 }

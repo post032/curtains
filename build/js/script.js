@@ -102,3 +102,8 @@ $('.article__lists').slick({
     // instead of a settings object
   ]
 });
+
+$(".review__write").click(function(){
+	$('.review__write2').slideToggle(300);      
+	return false;
+});
