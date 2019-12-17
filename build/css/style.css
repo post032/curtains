@@ -1275,14 +1275,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 3px;
     margin-top: 0;
   }
-  .review__write2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   .review__info .review__info-name {
     font-size: 16.667px;
     line-height: 1.625;
@@ -1301,6 +1293,14 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1075px) {
+  .review__write2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .review__radio-input + label::before {
     left: -18px;
   }
