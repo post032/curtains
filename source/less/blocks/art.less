@@ -26,12 +26,12 @@ margin-bottom: 6px;
 }
 
 .art__list {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .art__list img {
-  width: 100%;
-  height: auto;
+  width: 290px;
+  height: 227px;
 }
 
 .art__info h2 {
@@ -49,10 +49,17 @@ margin-bottom: 6px;
   .link;
 }
 
+.art__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      width: 100%;
+}
+
 @media (min-width: @size-tablet) {
   .art__title {
     .title-t;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
 
   .art__lists {
@@ -73,6 +80,23 @@ margin-bottom: 6px;
   .art__info a {
     .text-t;
   }
+.art__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.art__block a {
+  font-size: 16.667px;
+  font-family: "Ubuntu";
+  color: rgb(11, 64, 145);
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 2;
+  text-align: center;
+  border-bottom: 1px solid #c7d3e6;
+}
+
 
 }
 
@@ -83,7 +107,7 @@ margin-bottom: 6px;
   }
   .art__list {
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .art__info {
@@ -94,8 +118,16 @@ margin-bottom: 6px;
   margin-top: 0;
   }
 
-  .art__list img {
+  .art__info p {
+    margin-bottom: 8px;
+  }
+
+  .art__img {
     width: 244px;
+  }
+  .art__list img {
+    width: 233px;
+    height: 187px;
   }
 }
 

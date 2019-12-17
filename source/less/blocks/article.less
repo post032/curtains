@@ -4,6 +4,7 @@
 }
 .article__lists {
   padding: 0;
+  margin-top: 0;
   list-style-type: none;
 }
 
@@ -13,31 +14,68 @@
   margin-right: 5%;
 }
 
-.article__blocks p {
+.article__text {
   .text;
+  text-indent: 23px;
+  margin-top: 3px;
+}
+
+.article__text-indent {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.article__text-indent1 {
+  margin-bottom: 0;
+}
+
+.article__text-indent2 {
+  margin-top: 0;
 }
 
 .article__title {
   .name;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .article__img-desk {
   display: none;
 }
-
 .article__lists .slick-next,
 .article__lists .slick-prev {
   display: none!important;
+}
+
+.article__social {
+  margin-bottom: 27px;
 }
 
 .article__social,
 .article__social div {
   display: flex;
   flex-direction: row;
+  margin-left: 4px;
+  align-items: center;
 }
 
 .article__social div a {
-  margin: 20px 8px 2px;
+  margin: 4px 3px 5px;
+}
+
+.article__social div a img {
+  width: 20px;
+  height: 21px;
+}
+
+.article__img {
+  display: flex;
+  justify-content: center;
+}
+
+.article__image {
+  width: 290px;
+  height: 227px;
 }
 
 @media (min-width: @size-tablet) {
@@ -65,12 +103,31 @@
   }
 
 
-  .article__img img {
-    width: 50%;
+  .article__image {
+    width: 380px;
+    height: auto;
   }
 
-  .article__blocks p {
+  .article__text {
     .text-t;
+    text-indent: 36px;
+  }
+
+  .article__social {
+    min-height: 90px;
+  }
+
+  .article__social div a {
+        margin: 1px 4px 5px;
+  }
+
+  .article__social div a img {
+    width: 26px;
+    height: 25px;
+  }
+
+  .article__block .art__title {
+    font-size: 16.67px;
   }
 }
 
@@ -79,28 +136,47 @@
     display: flex;
     flex-direction: row;
   }
+
+  .article__img {
+   flex-direction: column;
+   justify-content: flex-start;
+   margin-right: 22px;
+ }
+
+ .article__blocks {
+   display: flex;
+   flex-direction: row;
+
+ }
+
+ .article__image {
+   margin-bottom: 22px;
+ }
+
+ .article__text-indent1 {
+   margin-top: 11px;
+ }
 }
   @media (min-width: 1365px) {
     .article__blocks {
       margin: 0;
+          margin-bottom: 43px;
     }
     .article__title {
       margin-top: 0;
     }
-  .article__img {
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 22px;
+
+  .article__block .art__title {
+    margin-bottom: 23px;
   }
 
-  .article__blocks {
-    display: flex;
-    flex-direction: row;
+  .article__image {
+    width: 506px;
+    height: 395px;
   }
 
-  .article__img img {
-width: 506px;
-height: 395px;
-margin-bottom: 22px;
+  .article__block {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
