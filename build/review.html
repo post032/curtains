@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>curtains</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <main class="review">
+      <div class="container"><a href="review.html">
+          <h1 class="review__title">отзывы</h1></a>
+        <section class="reviews">
+          <div class="review__block">
+            <button class="review__filters" type="button">Фильтр</button>
+            <form class="review__filter review__toggle" action="review.html" method="post"> 
+              <h2 class="review__name">дизайнер</h2>
+              <div>
+                <input id="name1" type="checkbox">
+                <label for="name1">Амонова Эльза</label>
+              </div>
+              <div>
+                <input id="name2" type="checkbox">
+                <label for="name2">Амонова Эльза</label>
+              </div>
+              <div>
+                <input id="name3" type="checkbox">
+                <label for="name3">Амонова Эльза</label>
+              </div>
+              <div>
+                <input id="name4" type="checkbox">
+                <label for="name4">Амонова Эльза</label>
+              </div>
+              <div>
+                <input id="name5" type="checkbox">
+                <label for="name5">Амонова Эльза</label>
+              </div>
+              <div>
+                <input id="name6" type="checkbox">
+                <label for="name6">Амонова Эльза</label>
+              </div>
+              <button type="button">Снять выделение</button>
+            </form>
+          </div>
+          <section class="review__blocks">
+            <div class="review__block3">
+              <button class="review__write" type="button">оставить отзыв</button>
+              <form class="review__write2" action="review.html" method="post">
+                <h2 class="review__write-title">Оставьте свой отзыв о нашей работе</h2>
+                <div class="review__write-block">
+                  <div>
+                    <label class="review__write-name" for="name-form">Ваше имя</label>
+                    <input class="review__block-input" type="text" id="name-form" placeholder="Имя">
+                  </div>
+                  <div>
+                    <label class="review__write-name" for="phone-form">телефон <span>(Не будет отображен в отзыве)</span></label>
+                    <input class="review__block-input" type="tel" id="phone-form" placeholder="8 (_ _ _) _ _ _ - _ _ - _ _">
+                  </div>
+                </div>
+                <div class="review__write-files">
+                  <p class="review__write-name">Прикрепить фото</p>
+                  <div class="review__write-file">
+                    <input class="review__file-input" type="file">
+                    <input class="review__file-input" type="file">
+                    <input class="review__file-input" type="file">
+                    <input class="review__file-input" type="file">
+                    <input class="review__file-input" type="file">
+                    <input class="review__file-input" type="file">
+                    <input class="review__file-input" type="file">
+                    <input class="review__file-input" type="file">
+                  </div>
+                </div>
+                <div class="review__write-radio">
+                  <div>
+                    <input class="review__radio-input" type="radio" id="a">
+                    <label for="a"><img src="img/foto.png">
+                      <p>Миргасимова Резеда</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input class="review__radio-input" type="radio" id="b">
+                    <label for="b"><img src="img/foto.png">
+                      <p>Миргасимова Резеда</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input class="review__radio-input" type="radio" id="c">
+                    <label for="c"><img src="img/foto.png">
+                      <p>Миргасимова Резеда</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input class="review__radio-input" type="radio" id="d">
+                    <label for="d"><img src="img/foto.png">
+                      <p>Миргасимова Резеда</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input class="review__radio-input" type="radio" id="e">
+                    <label for="e"><img src="img/foto.png">
+                      <p>Миргасимова Резеда</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input class="review__radio-input" type="radio" id="f">
+                    <label for="f"><img src="img/foto.png">
+                      <p>Миргасимова Резеда</p>
+                    </label>
+                  </div>
+                  <div>
+                    <input class="review__radio-input" type="radio" id="g">
+                    <label for="g"><img src="img/foto.png">
+                      <p>Миргасимова Резеда</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="review__write-text">
+                  <p class="review__write-name">отзыв</p>
+                  <textarea name="name" placeholder="Расскажите, как вы нас нашли, что больше всего понравилось в работе вашего дзайнера и на что следует обратить внимание будущим клиентам портьерного салона «Магия штор»"></textarea>
+                </div>
+                <div class="review__write-submit">
+                  <input class="review__submit-input" type="submit" value="отправить отзыв">
+                  <div class="review__write-checkbox">
+                    <input class="review__checkbox-input" type="checkbox" id="ok">
+                    <label class="review__write-checkbox-label" for="ok">Нажимая кнопку “Отправить отзыв” я соглашаюсь  на хранение и обработку моих персональных данных в соответствии с политикой конфиденциальности</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="review__block2">
+              <div class="review__show">
+                <p class="review__about">Показать: </p>
+                <button class="review__show-button" type="button">12</button>
+                <button class="review__show-button" type="button">24</button>
+                <button class="review__show-button" type="button">60</button>
+                <button class="review__show-button" type="button">100</button>
+                <button class="review__show-button" type="button">все (145)</button>
+              </div>
+              <ul class="review__lists">
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+                <li class="review__list">
+                  <div class="review__slider">
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                    <div><img src="img/reviwel.jpg"></div>
+                  </div>
+                  <div class="review__info">
+                    <h3 class="review__info-name">Лилия </h3>
+                    <p class="review__about">оформили квартиру на Комсомольской</p>
+                    <p class="review__text">“Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... </p><a href="#">Читать весь отзыв >></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="review__show2"> 
+                <button class="review__show-button2" type="button">1</button>
+                <button class="review__show-button2" type="button">2</button>
+                <button class="review__show-button2" type="button">3</button>
+                <button class="review__show-button2" type="button">4</button>
+                <button class="review__show-button2" type="button">5</button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-3.1.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
