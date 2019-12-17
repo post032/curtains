@@ -1494,3 +1494,11 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
   }
 }
+@media (min-width: 1580px) {
+  .article {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
+}
