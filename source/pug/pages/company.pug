@@ -12,42 +12,67 @@ html(lang="ru-Ru")
         div.container
           a(href="company.html")
             h1.company__title о компании
-          section.company__we
-            div.company__photos
-              div.company__photo
-                img(src="img/comp-1.jpg")
-              div.company__photo
-                img(src="img/comp-2.jpg")
-              div.company__photo
-                img(src="img/comp-3.jpg")
-              div.company__photo
-                img(src="img/comp-4.jpg")
-            a(href="company.html").company__logo
-              img(src="img/logo.png" alt="logo")
-            ul.company__history
-              li
-                div
-                  span 2007
-                p В Казани был открыт небольшой салон, совмещенный с пошивочным цехом на ул. Восстания, где работало 4 сотрудника. Некоторое время компания не имела значительного роста, в том числе по причине экономического кризиса.
-              li 
-                div
-                  span 2012
-                p Был создан производственный цех на площади 150 м2, а салон на ул. Восстания расширился на площади более 100 м2.
-              li 
-                div
-                  span 2013
-                p Открылся второй салон в Торговом Комплексе «Савиново», общей площадью 95 м2.
-              li 
-                div
-                  span 2016
-                p Открылся салон в Москве, в бизнес-парке «Румянцево».
-              li 
-                div.not__line
-                  span 2019
-                p На сегодняшний день в сети портьерных салонов «Магия штор» работают 6 высококвалифицированных дизайнеров по шторам со средним опытом работы более 10 лет.
-          div.company__video
-            h2.company__video-title видео-знакомство с салоном в ТЦ «Савиново»
-            video(poster="img/comp-video.jpg")
+          div.company__head
+            section.company__we
+              div.company__photos.company__photos-nodesk
+                div.company__photo
+                  img(src="img/comp-1.jpg")
+                div.company__photo
+                  img(src="img/comp-2.jpg")
+                div.company__photo
+                  img(src="img/comp-3.jpg")
+                div.company__photo
+                  img(src="img/comp-4.jpg")
+              a(href="company.html").company__logo
+                img(src="img/logo.png" alt="logo")
+              div.company__block
+                div.company__block1
+                  section.company__director.company__director-nomob
+                    h2.company__director-title Руководители - Вадим и Юлия Ивановы
+                    div.company__director-img
+                      img(src="img/comp-boss.jpg" alt="руководители")
+                  ul.company__history
+                    li
+                      div
+                        span 2007
+                      p В Казани был открыт небольшой салон, совмещенный с пошивочным цехом на ул. Восстания, где работало 4 сотрудника. Некоторое время компания не имела значительного роста, в том числе по причине экономического кризиса.
+                    li 
+                      div
+                        span 2012
+                      p Был создан производственный цех на площади 150 м2, а салон на ул. Восстания расширился на площади более 100 м2.
+                    li 
+                      div
+                        span 2013
+                      p Открылся второй салон в Торговом Комплексе «Савиново», общей площадью 95 м2.
+                    li 
+                      div
+                        span 2016
+                      p Открылся салон в Москве, в бизнес-парке «Румянцево».
+                    li 
+                      div.not__line
+                        span 2019
+                      p На сегодняшний день в сети портьерных салонов «Магия штор» работают 6 высококвалифицированных дизайнеров по шторам со средним опытом работы более 10 лет.
+                section.company__idea.company__tablet
+                  h2.company__idea-title наша цель
+                  p <span>&#9679;</span> Наша цель - заниматься пошивом штор наивысшего качества, которые бы украшали дома наших клиентов. В свою очередь, клиенты помогают нам расти, а также обеспечивать рост нашего бизнеса.
+                  h2.company__idea-title Почему мы?
+                  p <span>&#9679;</span> Качественные ткани по доступным ценам. Мы делаем шторы недорогими и качественными, чтобы они удовлетворяли потребности всех наших клиентов. Компания работает над дизайном штор, учитывая потребности клиентов.
+                  p <span>&#9679;</span> У нас собственный склад и цех, поэтому мы выполняем заказы быстро и качественно.
+                  p <span>&#9679;</span> Мы закупаем ткани оптом, это позволяет нам устанавливать низкие цены по городу. 
+                  p <span>&#9679;</span> Компания развивается вместе с людьми. Наши сотрудники играют важную роль в развитии компании. Мы видим талант и стараемся раскрыть потенциал каждого сотрудника.
+            div.company__block2
+              div.company__photos.company__photos-desk
+                div.company__photo
+                  img(src="img/comp-1.jpg")
+                div.company__photo
+                  img(src="img/comp-2.jpg")
+                div.company__photo
+                  img(src="img/comp-3.jpg")
+                div.company__photo
+                  img(src="img/comp-4.jpg")
+              div.company__video
+                h2.company__video-title видео-знакомство с салоном в ТЦ «Савиново»
+                video(poster="img/comp-video.jpg")
           section.company__designer
             h2.company__title дизайнеры
             ul.company__designers
@@ -55,46 +80,53 @@ html(lang="ru-Ru")
                 img(src="img/comp-d1.jpg" alt="штора")
                 div.company__info
                   h2 амонова эльза
-                  p Опыт работы: 12 лет Казань, ул. Восстания, д. 49
-                  a(href="#") Портфолио >>
+                  p Опыт работы: 12 лет 
+                  p Казань, ул. Восстания, д. 49
+                  a(href="#") Портфолио <span>>></span>
               li
                 img(src="img/comp-d1.jpg" alt="штора")
                 div.company__info
                   h2 амонова эльза
-                  p Опыт работы: 12 лет Казань, ул. Восстания, д. 49
-                  a(href="#") Портфолио >>
+                  p Опыт работы: 12 лет 
+                  p Казань, ул. Восстания, д. 49
+                  a(href="#") Портфолио <span>>></span>
               li
                 img(src="img/comp-d1.jpg" alt="штора")
                 div.company__info
                   h2 амонова эльза
-                  p Опыт работы: 12 лет Казань, ул. Восстания, д. 49
-                  a(href="#") Портфолио >>
+                  p Опыт работы: 12 лет 
+                  p Казань, ул. Восстания, д. 49
+                  a(href="#") Портфолио <span>>></span>
               li
                 img(src="img/comp-d1.jpg" alt="штора")
                 div.company__info
                   h2 амонова эльза
-                  p Опыт работы: 12 лет Казань, ул. Восстания, д. 49
-                  a(href="#") Портфолио >>
+                  p Опыт работы: 12 лет 
+                  p Казань, ул. Восстания, д. 49
+                  a(href="#") Портфолио <span>>></span>
               li
                 img(src="img/comp-d1.jpg" alt="штора")
                 div.company__info
                   h2 амонова эльза
-                  p Опыт работы: 12 лет Казань, ул. Восстания, д. 49
-                  a(href="#") Портфолио >>
+                  p Опыт работы: 12 лет 
+                  p Казань, ул. Восстания, д. 49
+                  a(href="#") Портфолио <span>>></span>
               li
                 img(src="img/comp-d1.jpg" alt="штора")
                 div.company__info
                   h2 амонова эльза
-                  p Опыт работы: 12 лет Казань, ул. Восстания, д. 49
-                  a(href="#") Портфолио >>
+                  p Опыт работы: 12 лет 
+                  p Казань, ул. Восстания, д. 49
+                  a(href="#") Портфолио <span>>></span>
               li
                 img(src="img/comp-d7.jpg" alt="штора")
                 div.company__info
                   h2 амонова эльза
-                  p Опыт работы: 12 лет Казань, ул. Восстания, д. 49
-                  a(href="#") Портфолио >>
+                  p Опыт работы: 12 лет 
+                  p Казань, ул. Восстания, д. 49
+                  a(href="#") Портфолио <span<span>>></span>></span>
           section.company__we
-            section.company__idea
+            section.company__idea.company__idea-mobile
               h2.company__idea-title наша цель
               p <span>&#9679;</span> Наша цель - заниматься пошивом штор наивысшего качества, которые бы украшали дома наших клиентов. В свою очередь, клиенты помогают нам расти, а также обеспечивать рост нашего бизнеса.
               h2.company__idea-title Почему мы?
@@ -102,36 +134,74 @@ html(lang="ru-Ru")
               p <span>&#9679;</span> У нас собственный склад и цех, поэтому мы выполняем заказы быстро и качественно.
               p <span>&#9679;</span> Мы закупаем ткани оптом, это позволяет нам устанавливать низкие цены по городу. 
               p <span>&#9679;</span> Компания развивается вместе с людьми. Наши сотрудники играют важную роль в развитии компании. Мы видим талант и стараемся раскрыть потенциал каждого сотрудника.
-            section.company__director
+            section.company__director.company__idea-mobile
               h2.company__director-title Руководители - Вадим и Юлия Ивановы
-              img(src="img/comp-boss.jpg" alt="руководители")
-              section.company__review
-                h2.review__title Отзывы
-                ul.review__lists.review__lists__slider
-                  li.review__list
-                    div.review__slider  
-                      img(src="img/reviwel.jpg")
-                    div.review__info
-                      h3 Лилия 
-                      p.review__about оформили квартиру на Комсомольской
-                      p.review__text “Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... 
-                      a(href="#") Читать весь отзыв >>
-                  li.review__list
-                    div.review__slider
-                      img(src="img/reviwel.jpg")
-                    div.review__info
-                      h3 Лилия 
-                      p.review__about оформили квартиру на Комсомольской
-                      p.review__text “Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... 
-                      a(href="#") Читать весь отзыв >>
-                  li.review__list
-                    div.review__slider
-                      img(src="img/reviwel.jpg")
-                    div.review__info
-                      h3 Лилия 
-                      p.review__about оформили квартиру на Комсомольской
-                      p.review__text “Позвонила в салон Магия штор, приятно была удивлена, что Резеда работает по сей день, я мигом к ней... 
-                      a(href="#") Читать весь отзыв >>
+              div.company__director-img
+                img(src="img/comp-boss.jpg" alt="руководители")
+            section.company__manufacture
+              h2.company__title производство
+              div.company__head
+                img(src="img/manuf.jpg" alt="производство")
+                section.company__idea
+                  h2.company__idea-title собственный пошивочный цех в казани
+                  p <span>&#9679;</span> Огромное преимущество для компании и для клиентов, т.к. свой цех позволяет снизить цены на ткани и услуги пошива! Мы закупаем ткань большим оптом прямо с фабрик, не переплачиваем стороннему цеху за пошив и за склад. Команда профессионалов за много лет работы уже отладила все производственные процессы и умеет контролировать качество работы и пошива.
+                  h2.company__idea-title сильная производственная команда
+                  p <span>&#9679;</span> Начальник производства - Людмила Иванова (опыт 15 лет)
+                  p <span>&#9679;</span> Главный технолог - Надежда Петрова (опыт 15 лет)
+                  p <span>&#9679;</span> Технолог - Людмила Васильева (опыт 15 лет) 
+                  p <span>&#9679;</span> Специалист по закупкам - Ирина Андреева (опыт 15 лет)
+                  p <span>&#9679;</span> Технолог - Помощник руководителя - Динар Иванов (опыт 15 лет)
+                  p <span>&#9679;</span> Швеи - 10 специалистов (опыт 15 лет)
+            section.company__review
+              h2.review__title Отзывы
+              ul.review__lists.review__lists__slider
+                li.review__list
+                  div.review__slider  
+                    img(src="img/reviwel.jpg")
+                  div.review__info
+                    h3.review__info-name Лилия 
+                    p.review__about оформили квартиру на Комсомольской
+                    p.review__text “Добрый день!! Заказывала у Вас портьеры и тюль) Осталась оооочень довольна!!! Спасибо большое дизайнеру Тамаре! Настоящий профессионал своего дела! Все измерила, подобрала, подсказала как лучше сделать, показала дизайн на компьютере. Спасибо огромное! Шторы очень красивые!”    
+                li.review__list
+                  div.review__slider
+                    img(src="img/reviwel.jpg")
+                  div.review__info
+                    h3.review__info-name Лилия 
+                    p.review__about оформили квартиру на Комсомольской
+                    p.review__text “Добрый день!! Заказывала у Вас портьеры и тюль) Осталась оооочень довольна!!! Спасибо большое дизайнеру Тамаре! Настоящий профессионал своего дела! Все измерила, подобрала, подсказала как лучше сделать, показала дизайн на компьютере. Спасибо огромное! Шторы очень красивые!”
+                li.review__list
+                  div.review__slider
+                    img(src="img/reviwel.jpg")
+                  div.review__info
+                    h3.review__info-name Лилия 
+                    p.review__about оформили квартиру на Комсомольской
+                    p.review__text “Добрый день!! Заказывала у Вас портьеры и тюль) Осталась оооочень довольна!!! Спасибо большое дизайнеру Тамаре! Настоящий профессионал своего дела! Все измерила, подобрала, подсказала как лучше сделать, показала дизайн на компьютере. Спасибо огромное! Шторы очень красивые!”
+              div.company__review-button
+                a(href="review.html").company__review-link читать все отзывы
+            section.company__guarantee
+              h2.company__title гарантии качества
+              ul.company__guarantee-lists
+                li 
+                  img(src="img/comp-sert.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert.jpg" alt="сертификат")
+              ul.company__guarantee-items
+                li 
+                  img(src="img/comp-sert1.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert1.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert1.jpg" alt="сертификат")
+                li 
+                  img(src="img/comp-sert1.jpg" alt="сертификат")
               
             
       script(src="js/jquery-3.4.1.min.js")

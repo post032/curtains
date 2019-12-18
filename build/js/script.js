@@ -1,5 +1,5 @@
 $(window).on('load resize', function() {
-  if ($(window).width() < 1075) {
+  if ($(window).width() < 768) {
     $('.company__photos:not(.slick-initialized)').slick({
       dots: true,
       infinite: true,
@@ -104,6 +104,6 @@ $('.article__lists').slick({
 });
 
 $(".review__write").click(function(){
-	$('.review__write2').slideToggle(300);      
+	$('.review__write2').slideToggle(300);
 	return false;
 });
