@@ -714,7 +714,7 @@ input[type="radio"].visually-hidden {
   height: 67px;
   margin-right: 6px;
 }
-.sloder__show {
+.slider__show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,15 +1100,53 @@ input[type="radio"].visually-hidden {
     height: 270px;
   }
   .company__review .slick-initialized .slick-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0 4px;
+    min-height: 216px;
+  }
+  .company__review .review__list {
+    padding: 10px;
   }
   .slider-nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .company__review .review__lists .slick-next,
+  .company__review .review__lists .slick-prev {
+    display: block!important;
+  }
+  .company__review .review__lists .slick-next:before,
+  .company__review .review__lists .slick-prev:after {
+    content: "";
+    display: block;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 13px;
+    height: 21px;
+    z-index: 2;
+  }
+  .company__review .review__lists .slick-prev:after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  .slider__show {
+    margin-top: 10px;
+  }
+  .company__review .review__lists .slick-prev {
+    left: -46px;
+  }
+  .company__review .review__lists .slick-next {
+    right: -40px;
   }
 }
 .review {
@@ -1684,15 +1722,8 @@ input[type="radio"].visually-hidden {
     text-align: left;
   }
   .review__list {
+    width: 220px;
     margin-bottom: 19px;
-  }
-  .review__filters {
-    font-size: 29px;
-    font-family: "MuseoCyrl";
-    text-align: left;
-  }
-  .review__filters::before {
-    display: none;
   }
   .review__write-submit {
     -webkit-box-orient: horizontal;
@@ -1746,6 +1777,14 @@ input[type="radio"].visually-hidden {
     left: -18px;
   }
   .review__write {
+    display: none;
+  }
+  .review__filters {
+    font-size: 29px;
+    font-family: "MuseoCyrl";
+    text-align: left;
+  }
+  .review__filters::before {
     display: none;
   }
   .review__block {
@@ -2127,6 +2166,167 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1580px) {
   .article {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto;
+  }
+}
+.portfolio {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.portfolio__review {
+  display: none;
+}
+.portfolio__review .review__filters {
+  position: relative;
+}
+.portfolio__block .review__filters::after {
+  content: "2";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 1px #5b2c60 solid;
+  border-radius: 50%;
+  font-size: 6px;
+  font-family: "Ubuntu";
+  color: #000000;
+  line-height: 1.2;
+  text-align: center;
+  background-color: #ffffff;
+  position: absolute;
+  top: 25px;
+  right: 16px;
+}
+.portfolio__block .review__lists {
+  margin-top: 3px;
+}
+.portfolio__elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.portfolio__element {
+  background-color: #dddddd;
+  width: 15px;
+  height: 13px;
+  margin-right: 8px;
+}
+.portfolio__element-bg {
+  background: url("../img/cubs.jpg") no-repeat;
+}
+.portfolio__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.portfolio__blocks .review__lists {
+  margin-top: 7px;
+}
+.portfolio__blocks .review__list {
+  padding-bottom: 0;
+}
+.portfolio__el,
+.portfolio__el2 {
+  display: none;
+}
+@media (min-width: 1075px) {
+  .portfolio__review {
+    display: block;
+  }
+  .portfolio__el,
+  .portfolio__el2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .portfolio__block .review__filters::after {
+    display: none;
+  }
+  .portfolio__element {
+    display: none;
+  }
+  .portfolio__el {
+    border-radius: 3px;
+    background-color: rgba(230, 213, 233, 0.702);
+    width: 96px;
+    height: 26px;
+    margin-right: 7px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16.667px;
+    font-family: "Ubuntu";
+    color: #000000;
+    line-height: 1.75;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .portfolio__el::after,
+  .portfolio__el::before {
+    content: "";
+    border-radius: 3px;
+    background-color: #000000;
+    width: 16px;
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+  }
+  .portfolio__el::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .portfolio__el::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .portfolio__elements {
+    position: absolute;
+    top: 47px;
+    left: 390px;
+  }
+  .portfolio__el2 {
+    font-size: 9px;
+    line-height: 11px;
+    font-family: "Ubuntu";
+    color: #0b4091;
+    text-align: left;
+    font-weight: 300;
+    border-bottom: 1px solid #c7d3e6;
+    font-size: 16.667px;
+    line-height: 20px;
+  }
+  .portfolio__blocks .review__list {
+    min-height: 573px;
+  }
+}
+@media (min-width: 1560px) {
+  .portfolio {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-position: top center;
