@@ -1,0 +1,168 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    title curtains
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/style.min.css")
+  body
+      main.favourit
+        div.container
+          div.wrapper
+            div.wrap
+              h1.company__title избранное
+              div.favourit__section
+                div.favourit__blocks1
+                  div.fav__sort
+                    h3 Сортировать:
+                    div.fav__sorts
+                      span.fav__button
+                        input(type="text" value="по популярности" id="sort" disabled)
+                      div.fav__choise
+                        div 
+                          p(id="pop") по популярности
+                        div 
+                          p(id="up") по возрастанию цены
+                        div 
+                          p(id="down") по убыванию цены
+                        div 
+                          p(id="new") сначала новинки
+                  ul.fav__lists
+                    li.fav__list.fav__list1
+                      p.fav__name ткани в избранном (5)
+                    li.fav__list
+                      img(src="img/img.jpg" alt="ткань")
+                      div.fav__info
+                        h3.fav__name.fav__name--position Бархат NOLAN
+                        table.fav__table
+                          tr.fav__row
+                            td.fav__hd Артикул: 
+                            td.fav__art 99953
+                          tr.fav__row
+                            td.fav__hd Цена:
+                            td.fav__price <span>2 500 руб.</span>/пог. м.
+                        a(href="#").fav__link Подробнее о товаре >>
+                        button(type="button").fav__del Удалить из избранного
+                    li.fav__list
+                      img(src="img/img.jpg" alt="ткань")
+                      div.fav__info
+                        h3.fav__name.fav__name--position Бархат NOLAN
+                        table.fav__table
+                          tr.fav__row
+                            td.fav__hd Артикул: 
+                            td.fav__art 99953
+                          tr.fav__row
+                            td.fav__hd Цена:
+                            td.fav__price <span>2 500 руб.</span>/пог. м.
+                        a(href="#").fav__link Подробнее о товаре >>
+                        button(type="button").fav__del Удалить из избранного
+                    li.fav__list
+                      img(src="img/img.jpg" alt="ткань")
+                      div.fav__info
+                        h3.fav__name.fav__name--position Бархат NOLAN
+                        table.fav__table
+                          tr.fav__row
+                            td.fav__hd Артикул: 
+                            td.fav__art 99953
+                          tr.fav__row
+                            td.fav__hd Цена:
+                            td.fav__price <span>2 500 руб.</span>/пог. м.
+                        a(href="#").fav__link Подробнее о товаре >>
+                        button(type="button").fav__del Удалить из избранного
+                    li.fav__list
+                      img(src="img/img.jpg" alt="ткань")
+                      div.fav__info
+                        h3.fav__name.fav__name--position Бархат NOLAN
+                        table.fav__table
+                          tr.fav__row
+                            td.fav__hd Артикул: 
+                            td.fav__art 99953
+                          tr.fav__row
+                            td.fav__hd Цена:
+                            td.fav__price <span>2 500 руб.</span>/пог. м.
+                        a(href="#").fav__link Подробнее о товаре >>
+                        button(type="button").fav__del Удалить из избранного
+                    li.fav__list
+                      img(src="img/img.jpg" alt="ткань")
+                      div.fav__info
+                        h3.fav__name.fav__name--position Бархат NOLAN
+                        table.fav__table
+                          tr.fav__row
+                            td.fav__hd Артикул: 
+                            td.fav__art 99953
+                          tr.fav__row
+                            td.fav__hd Цена:
+                            td.fav__price <span>2 500 руб.</span>/пог. м.
+                        a(href="#").fav__link Подробнее о товаре >>
+                        button(type="button").fav__del Удалить из избранного
+                div.favourit__blocks
+                  section.favourit__lists
+                    div.favourit__list
+                      h2.favourit__name заголовок
+                      div.favourit__items
+                        p.favourit__item <span>&#9679;</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor exercitation ullamco laboris nisi ut aliquip ex ea commodo sequat. 
+                        p.favourit__item <span>&#9679;</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid tat non pro dent, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      form(action="favourit.html" method="post").favourit__form
+                        div.favourit__enters
+                          div.favourit__enter
+                            label(for="name-form").favourit__name-input Ваше имя
+                            input(type="text" id="name-form" placeholder="Ваше имя").favourit-input
+                          div.favourit__enter
+                            label(for="phone-form").favourit__name-input телефон
+                            input(type="tel" id="phone-form" placeholder="8 (_ _ _) _ _ _ - _ _ - _ _").favourit-input
+                        div.favourit__enter.favourit__enter--position
+                          p.favourit__name-input комментарий
+                          textarea(name="name" placeholder="Ваш комментарий / вопрос / пожелание")
+                        div.favourit__submit
+                          input(type="submit" value="отправить список в салон").favourit__submit-input
+                          div.review__write-checkbox
+                            input(type="checkbox" id="ok").review__checkbox-input
+                            label(for="ok").review__write-checkbox-label Нажимая кнопку “ОТПРАВИТЬ ЗАЯВКУ” я соглашаюсь<br>  на хранение и обработку моих персональных данных в соответствии с <a href="#" class="">политикой конфиденциальности</a>
+                  section.favourit__lists
+                    div.favourit__list
+                      h2.favourit__name заголовок
+                      div.favourit__items
+                        p.favourit__item <span>&#9679;</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor exercitation ullamco laboris nisi ut aliquip ex ea commodo sequat. 
+                        p.favourit__item <span>&#9679;</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid tat non pro dent, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        p.favourit__item <span>&#9679;</span> Также вы можете <a href="#">распечатать список</a> и прийти с ним в салон в удобное для вас время. Наши дизайнеры подберут вам ткани и natus error sit voluptatem accusan tium doloremque, explicabo.
+                      form(action="favourit.html" method="post").favourit__form
+                        div.favourit__enters
+                          div.favourit__enter
+                            label(for="name-form").favourit__name-input Ваше имя
+                            input(type="text" id="name-form" placeholder="Ваше имя").favourit-input
+                          div.favourit__enter
+                            label(for="phone-form").favourit__name-input e-mail
+                            input(type="tel" id="phone-form" placeholder="example@example.ru").favourit-input
+                        div.favourit__submit
+                          input(type="submit" value="отправить список в салон").favourit__submit-go
+                  section.company__review.favourit__review
+                    h2.review__title Преимущества выезда<br> дизайнера на дом
+                    ul.review__lists.review__lists__slider
+                      li.review__list
+                        div.slider__show
+                          img(src="img/color.png")
+                        div.review__info
+                          h3.review__info-name Удобство
+                          p.review__about Дадим профессиональный совет по выбору штор, тюли, декора, учитывая все особенности интерьера и освещения, а также ваши пожелания. Также делаем визуализацию по фото   
+                      li.review__list
+                        div.slider__show
+                          img(src="img/color.png")
+                        div.review__info
+                          h3.review__info-name Удобство
+                          p.review__about Дадим профессиональный совет по выбору штор, тюли, декора, учитывая все особенности интерьера и освещения, а также ваши пожелания. Также делаем визуализацию по фото
+                      li.review__list
+                        div.slider__show
+                          img(src="img/color.png")
+                        div.review__info
+                          h3.review__info-name Удобство
+                          p.review__about Дадим профессиональный совет по выбору штор, тюли, декора, учитывая все особенности интерьера и освещения, а также ваши пожелания. Также делаем визуализацию по фото
+                    div.company__review-button
+                      a(href="review.html").favourit__submit-input оставить заявку на выезд
+            div.wrap2
+              //сюда поставить блок
+      script(src="js/jquery-3.4.1.min.js")
+      script(src="js/jquery-migrate-3.1.0.min.js")
+      script(src="js/slick.min.js")
+      script(src="js/script.js")

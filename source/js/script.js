@@ -115,3 +115,8 @@ $('.slider-nav').slick({
  dots: false,
  focusOnSelect: true
 });
+
+$('.fav__button').click(function(){
+	$('.fav__choise').slideToggle(300);
+	return false;
+});
