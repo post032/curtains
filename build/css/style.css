@@ -597,29 +597,13 @@ input[type="radio"].visually-hidden {
           justify-content: center;
 }
 .company__review-link {
-  border: 1px #5b2c60 solid;
-  border-radius: 20px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
-  width: 242px;
-  min-height: 27px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 12px;
+  font-size: 16.667px;
   font-family: "Ubuntu";
-  color: #2c0b2f;
-  text-transform: uppercase;
+  color: #0b4090;
+  font-style: italic;
+  text-decoration: underline;
   line-height: 1.2;
   text-align: center;
-  font-weight: normal;
 }
 .company__info {
   width: 100%;
@@ -694,7 +678,7 @@ input[type="radio"].visually-hidden {
 .company__review .review__lists {
   margin-top: 7px;
 }
-.company__review .review__slider img {
+.company__review .review__slider .slider-for img {
   width: 290px!important;
   height: 234px;
 }
@@ -724,6 +708,35 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.company__review .slider img {
+  width: 83px!important;
+  height: 67px;
+  margin-right: 6px;
+}
+.sloder__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
   .company__director-title,
@@ -905,6 +918,9 @@ input[type="radio"].visually-hidden {
   .company__manufacture .company__title {
     margin-top: 46px;
   }
+  .company__review .slider-for img {
+    width: 330px!important;
+  }
 }
 @media (min-width: 1075px) {
   .company__photo img {
@@ -1010,6 +1026,20 @@ input[type="radio"].visually-hidden {
     width: 230px;
     height: 330px;
   }
+  .company__review .review__slider {
+    width: 357px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .company__review .slider-for img {
+    width: 357px!important;
+    height: 278px;
+  }
 }
 @media (min-width: 1580px) {
   .company__designer img {
@@ -1020,7 +1050,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
   }
   .company {
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg1.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto;
@@ -1069,6 +1099,17 @@ input[type="radio"].visually-hidden {
     width: 372px;
     height: 270px;
   }
+  .company__review .slick-initialized .slick-slide {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .slider-nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 .review {
   -webkit-box-sizing: border-box;
@@ -1102,6 +1143,9 @@ input[type="radio"].visually-hidden {
   line-height: 1.716;
   font-weight: 500;
   text-align: right;
+}
+.review__filter {
+  display: none;
 }
 .review__filter div {
   display: -webkit-box;

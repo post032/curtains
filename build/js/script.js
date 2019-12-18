@@ -11,19 +11,15 @@ $(window).on('load resize', function() {
   }
 });
 
-// $(window).on('load resize', function() {
-//   if ($(window).width() < 768) {
-//     $('.review__filters').click() {
-//       $('.review__filter').toggleClass('review__toggle');
-//     };
-//   } else {
-//     $('.review__filter').removeClass('review__toggle');
-//   }
-// });
+$(".review__write").click(function(){
+	$('.review__write2').slideToggle(300);
+	return false;
+});
+$(".review__filters").click(function(){
+	$('.review__filter').slideToggle(300);
+	return false;
+});
 
-// $('.review__filters').click() {
-//   $('.review__filter').toggleClass('review__toggle');
-// };
 
 $('.review__slider').slick({
   dots: true,
@@ -103,7 +99,19 @@ $('.article__lists').slick({
   ]
 });
 
-$(".review__write").click(function(){
-	$('.review__write2').slideToggle(300);
-	return false;
+
+$('.slider-for').slick({
+ slidesToShow: 1,
+ slidesToScroll: 1,
+ arrows: false,
+ dots: false,
+ fade: true,
+ asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+ slidesToShow: 3,
+ slidesToScroll: 1,
+ asNavFor: '.slider-for',
+ dots: false,
+ focusOnSelect: true
 });

@@ -156,8 +156,13 @@
 }
 
 .company__review-link {
-  .button;
-  .button-name;
+  font-size: 16.667px;
+  font-family: "Ubuntu";
+  color: rgb(11, 64, 144);
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 1.2;
+  text-align: center;
 }
 // @media (min-width: 325px) {
 //   .company__photo img,
@@ -228,7 +233,7 @@
   margin-top: 7px;
 }
 
-.company__review .review__slider img {
+.company__review .review__slider .slider-for img {
   width: 290px!important;
   height: 234px;
 }
@@ -249,6 +254,24 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.company__review .slider img {
+  width: 83px!important;
+  height: 67px;
+  margin-right: 6px;
+}
+
+.sloder__show {
+  display: flex;
+  flex-direction: column;
+}
+.slider-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 @media (min-width: @size-tablet) {
   .company__director-title,
@@ -417,6 +440,13 @@ height: 130px;
 .company__manufacture .company__title {
   margin-top: 46px;
 }
+
+.company__review .slider-for img {
+  width: 330px!important;
+  // height: 278px;
+}
+
+
 }
 @media (min-width: @size-desktop) {
   .company__photo img {
@@ -458,7 +488,6 @@ height: 130px;
   margin-top: 5px;
 margin-bottom: 5px;
 }
-
 
   .company__designers li {
     width: 23%;
@@ -525,6 +554,20 @@ margin-bottom: 5px;
   width: 230px;
   height: 330px;
 }
+
+.company__review .review__slider {
+  width: 357px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.company__review .slider-for img {
+  width: 357px!important;
+  height: 278px;
+}
+
+
 }
 @media (min-width: 1580px) {
   .company__designer img {
@@ -535,7 +578,7 @@ margin-bottom: 5px;
     padding: 0
   }
   .company {
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg1.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto;
@@ -592,4 +635,11 @@ margin-bottom: 5px;
     width: 372px;
     height: 270px;
   }
-}
+
+  .company__review .slick-initialized .slick-slide {
+    flex-direction: row;
+  }
+  .slider-nav {
+    justify-content: flex-start;
+  }
+  }
