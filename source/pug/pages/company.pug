@@ -10,7 +10,8 @@ html(lang="ru-Ru")
   body
       main.company
         div.container
-          h1.company__title о компании
+          a(href="company.html")
+            h1.company__title о компании
           div.company__head
             section.company__we
               div.company__photos.company__photos-nodesk
@@ -142,9 +143,9 @@ html(lang="ru-Ru")
               div.company__head
                 img(src="img/manuf.jpg" alt="производство")
                 section.company__idea
-                  h2.company__idea-title собственный пошивочный цех в казани
+                  h2.company__idea-title.company__manufacture-t собственный пошивочный цех в казани
                   p <span>&#9679;</span> Огромное преимущество для компании и для клиентов, т.к. свой цех позволяет снизить цены на ткани и услуги пошива! Мы закупаем ткань большим оптом прямо с фабрик, не переплачиваем стороннему цеху за пошив и за склад. Команда профессионалов за много лет работы уже отладила все производственные процессы и умеет контролировать качество работы и пошива.
-                  h2.company__idea-title сильная производственная команда
+                  h2.company__idea-title.company__manufacture-t2 сильная производственная команда
                   p <span>&#9679;</span> Начальник производства - Людмила Иванова (опыт 15 лет)
                   p <span>&#9679;</span> Главный технолог - Надежда Петрова (опыт 15 лет)
                   p <span>&#9679;</span> Технолог - Людмила Васильева (опыт 15 лет) 
@@ -200,7 +201,7 @@ html(lang="ru-Ru")
                     p.review__about оформили квартиру на Комсомольской
                     p.review__text “Добрый день!! Заказывала у Вас портьеры и тюль) Осталась оооочень довольна!!! Спасибо большое дизайнеру Тамаре! Настоящий профессионал своего дела! Все измерила, подобрала, подсказала как лучше сделать, показала дизайн на компьютере. Спасибо огромное! Шторы очень красивые!”
               div.company__review-button
-                a(href="review.html").company__review-link Читать все отзывы (145)
+                a(href="review.html").company__review-link Читать все отзывы <span>(145)</span>
             section.company__guarantee
               h2.company__title гарантии качества
               ul.company__guarantee-lists

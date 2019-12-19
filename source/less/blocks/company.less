@@ -14,6 +14,10 @@
   margin-bottom: 10px;
 }
 
+.company__tablet {
+  display: none;
+}
+
 .company__photos .slick-next,
 .company__photos .slick-prev,
 .review__lists .slick-next,
@@ -52,7 +56,8 @@
 .company__history {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
+  margin-top: 0;
 }
 
 .company__history li {
@@ -115,13 +120,18 @@
   .title-min;
 }
 
-.company__video video {
+.company__video-title {
   width: 90%;
+}
+
+.company__video video {
+  width: 288px;
 }
 
 .company__designer {
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 9px;
 }
 
 .company__designers {
@@ -140,9 +150,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 6px 0;
-  width: 44.4%;
-  margin-bottom: 20px;
+  padding: 5px 6px 0;
+  width: 45%;
+  margin-bottom: 0;
 }
 
 .company__designer img {
@@ -155,14 +165,30 @@
   justify-content: center;
 }
 
+.company__review {
+  padding-top: 10px;
+}
+
 .company__review-link {
-  font-size: 16.667px;
+  border: 1px rgb(91, 44, 96) solid;
+  background-image: #ffffff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 242px;
+  height: 28px;
+  font-size: 12px;
   font-family: "Ubuntu";
-  color: rgb(11, 64, 144);
-  font-style: italic;
-  text-decoration: underline;
+  color: rgb(44, 11, 47);
+  text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 30px;
+}
+
+.company__review-link  span{
+  display: none;
 }
 // @media (min-width: 325px) {
 //   .company__photo img,
@@ -189,6 +215,7 @@
 
 .company__info a {
   .link;
+  line-height: 10px;
 }
 
 .company__idea {
@@ -201,12 +228,12 @@
 
 .company__idea p span {
   color: rgb(44, 11, 47);
-  margin-left: 14px;
-  margin-right: 7px;
+  margin-left: 12px;
+  margin-right: 4px;
 }
 
 .company__director {
-  padding-top: 15px;
+  padding-top: 12px;
 }
 
 .company__director-img {
@@ -226,7 +253,7 @@
 
 .company__review .review__list {
   padding: 0;
-  min-height: 360px;
+  min-height: 326px;
 }
 
 .company__review .review__lists {
@@ -240,7 +267,7 @@
 
 .company__review .review__info {
   padding-left: 22px;
-  padding-right: 11px;
+  padding-right: 20px;
 }
 
 .company__review .slick-track,
@@ -266,12 +293,15 @@
   display: flex;
   flex-direction: column;
 }
+
+
+.slider-for img {
+  width: 286px;
+height: 233px;
+}
+
 .slider-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 10px;
+  display: none;
 }
 @media (min-width: @size-tablet) {
   .company__director-title,
@@ -279,8 +309,21 @@
   .company__video-title {
     .title-min-t;
   }
+
+  .company__director-title {
+    text-align: center;
+  }
+
+  .company__video-title {
+    text-align: center;
+    width: 100%;
+  }
 .company__idea {
   padding: 0;
+}
+
+.company__tablet {
+  display: block;
 }
 
 .company__guarantee-lists li img {
@@ -328,8 +371,9 @@ height: 130px;
   }
 
   .company__director {
-    width: 30%;
+    width: 50%;
     padding: 0;
+
   }
 
   .company__director img {
@@ -446,7 +490,10 @@ height: 130px;
   // height: 278px;
 }
 
-
+.company__video video {
+  width: 420px;
+  height: 341px;
+}
 }
 @media (min-width: @size-desktop) {
   .company__photo img {
@@ -454,6 +501,11 @@ height: 130px;
     height: 190px;
     margin-bottom: 8px;
 
+  }
+
+  .company__director {
+    width: 56%;
+    margin-right: 23px;
   }
 
   .company__guarantee-lists li img {
@@ -465,13 +517,9 @@ height: 130px;
     height: 190px;
 }
 .company__manufacture {
-  margin-bottom: 56px;
+  margin-bottom: 29px;
 }
-  .company__manufacture img {
-      width: 770px;
-      height: 430px;
-      margin-right: 23px;
-  }
+
 
   .company__video video {
     width: 420px;
@@ -481,12 +529,13 @@ height: 130px;
     margin-top: 20px;
   }
 
-  .company__video {
-    align-items: flex-start;
-  }
+
 .company__video .company__video-title {
   margin-top: 5px;
 margin-bottom: 5px;
+}
+.company__video-title {
+  text-align: left;
 }
 
   .company__designers li {
@@ -500,7 +549,7 @@ margin-bottom: 5px;
 
   .company__head {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 19px;
   }
 
@@ -523,7 +572,7 @@ margin-bottom: 5px;
   }
 
   .company__history {
-    width: 59%;
+    width: 100%;
 }
 .company__block1 {
     align-items: flex-start;
@@ -539,15 +588,14 @@ margin-bottom: 5px;
     position: relative;
     margin-right: 8px;
   }
+.company__designers li {
+  margin-bottom: 23px;
+}
 
-  .company__director-title {
-    position: absolute;
-    left: 399px;
-    top: 49px;
-  }
 
   .company__designer {
     margin-top: 45px;
+
 }
 
 .company__designer img {
@@ -566,7 +614,33 @@ margin-bottom: 5px;
   width: 357px!important;
   height: 278px;
 }
+.company__review-link {
+  font-size: 16.667px;
+  font-family: "Ubuntu";
+  color: rgb(11, 64, 144);
+  font-style: italic;
+  text-decoration: underline;
+  line-height: 1.2;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+}
 
+.company__review-link  span{
+  display: inline-block;
+}
+
+.company__manufacture img {
+    width: 550px;
+    height: 320px;
+    margin-right: 23px;
+}
+}
+
+@media (min-width: 1200px) {
+  .company__head {
+    flex-direction: row;
+}
 
 }
 @media (min-width: 1580px) {
@@ -574,6 +648,12 @@ margin-bottom: 5px;
     width: 330px;
     height: 430px;
   }
+  .company__manufacture img {
+      width: 770px;
+      height: 430px;
+      margin-right: 23px;
+  }
+
   .company__designer {
     padding: 0
   }
@@ -682,5 +762,36 @@ top: 0;
   }
   .company__review .review__lists .slick-next {
       right: -40px;
+    }
+
+    .slider-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .company__director-title {
+      position: absolute;
+      left: 399px;
+      top: 49px;
+    }
+
+    .company__video {
+      align-items: flex-start;
+    }
+
+    .company__manufacture .company__manufacture-t {
+      margin-top: 11px;
+    }
+
+    .company__manufacture .company__manufacture-t2 {
+      margin-top: 29px;
+    }
+
+    .company__guarantee .company__title {
+      margin-top: 42px;
+    margin-bottom: 14px;
     }
   }
