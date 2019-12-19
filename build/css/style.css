@@ -2934,6 +2934,7 @@ input[type="radio"].visually-hidden {
   border: none;
   background: #ffffff;
   border-bottom: 1px solid #c7d3e6;
+  font-style: italic;
 }
 .fav__link {
   margin-top: 3px;
