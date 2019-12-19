@@ -123,7 +123,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
 }
 .title-t {
   font-size: 29px;
@@ -167,6 +167,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   line-height: 1.935;
   text-align: left;
+  font-weight: 300;
 }
 .name-t {
   font-size: 16.667px;
@@ -237,7 +238,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 10px;
   margin-bottom: 6px;
 }
@@ -275,6 +276,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   line-height: 1.935;
   text-align: left;
+  font-weight: 300;
   margin-top: 9px;
   margin-bottom: 5px;
 }
@@ -427,7 +429,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .company__tablet {
@@ -1285,7 +1287,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 .review__write-checkbox-label a {
@@ -2193,6 +2195,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   line-height: 1.935;
   text-align: left;
+  font-weight: 300;
   margin-top: 9px;
   margin-bottom: 5px;
 }
@@ -2459,8 +2462,8 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 @media (min-width: 768px) {
-  .portfolio__blocks .review__text,
-  .portfolio__blocks .review__about {
+  .portfolio__blocks .review__about,
+  .portfolio__blocks .review__text {
     font-size: 16.67px;
   }
 }
@@ -2492,8 +2495,8 @@ input[type="radio"].visually-hidden {
   .portfolio__element {
     display: none;
   }
-  .portfolio__lists .review__info .review__info-name,
   .portfolio__lists .review__info .review__about,
+  .portfolio__lists .review__info .review__info-name,
   .portfolio__lists .review__info .review__text,
   .portfolio__lists .review__info a {
     margin-top: 11px;
@@ -2512,6 +2515,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 16.667px;
+    font-weight: 300;
     font-family: "Ubuntu";
     color: #000000;
     line-height: 1.75;
@@ -2559,6 +2563,7 @@ input[type="radio"].visually-hidden {
     width: max-content;
     font-size: 16.667px;
     line-height: 20px;
+    font-style: italic;
   }
   .portfolio__blocks .review__list {
     min-height: 573px;

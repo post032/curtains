@@ -39,10 +39,11 @@
 }
 
 .portfolio__reviews .review__text {
-    margin-bottom: 7px;
-  }
+  margin-bottom: 7px;
+}
+
 .portfolio__reviews .review__about,
- .portfolio__reviews  .review__text{
+.portfolio__reviews .review__text {
   font-size: 8px;
   font-weight: 300;
 }
@@ -91,8 +92,8 @@
   display: none;
 }
 @media (min-width: @size-tablet) {
-  .portfolio__blocks .review__text,
-  .portfolio__blocks .review__about {
+  .portfolio__blocks .review__about,
+  .portfolio__blocks .review__text {
     font-size: 16.67px;
   }
 }
@@ -123,8 +124,8 @@
     display: none;
   }
 
-  .portfolio__lists .review__info .review__info-name,
   .portfolio__lists .review__info .review__about,
+  .portfolio__lists .review__info .review__info-name,
   .portfolio__lists .review__info .review__text,
   .portfolio__lists .review__info a {
     margin-top: 11px;
@@ -134,22 +135,25 @@
     border-radius: 3px;
     background-color: rgba(230, 213, 233, 0.702);
     width: 96px;
-height: 26px;
-margin-right: 7px;
+    height: 26px;
+    margin-right: 7px;
     position: relative;
     display: flex;
     justify-content: center;
     font-size: 16.667px;
+    font-weight: 300;
     font-family: "Ubuntu";
     color: rgb(0, 0, 0);
     line-height: 1.75;
     text-align: left;
     padding-left: 20px;
   }
+
   .portfolio__el1 {
     width: 84px;
     margin-right: 14px;
   }
+
   .portfolio__el::after,
   .portfolio__el::before {
     content: "";
@@ -179,6 +183,7 @@ margin-right: 7px;
   .portfolio__el2 {
     .link;
     .link-t;
+    font-style: italic;
   }
 
   .portfolio__blocks .review__list {
@@ -186,12 +191,10 @@ margin-right: 7px;
     margin-bottom: 20px;
   }
 
-
-
   .portfolio__reviews {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
   }
 
   .portfolio .company__review {
@@ -206,28 +209,28 @@ margin-right: 7px;
     background-size: auto;
   }
 
-.portfolio  .review__title--tr {
-  transform: translateX(197px);
-  margin-bottom: 18px;
-}
+  .portfolio .review__title--tr {
+    transform: translateX(197px);
+    margin-bottom: 18px;
+  }
 
-.portfolio .company__review .slider-for img {
-  height: 290px;
-}
+  .portfolio .company__review .slider-for img {
+    height: 290px;
+  }
 
-.portfolio .slider-nav {
-  justify-content: flex-start;
-}
+  .portfolio .slider-nav {
+    justify-content: flex-start;
+  }
 
-.portfolio .company__review .slick-initialized .slick-slide {
-  min-height: 198px;
-}
+  .portfolio .company__review .slick-initialized .slick-slide {
+    min-height: 198px;
+  }
 
-.portfolio .company__review  .slick-dots {
-  bottom: -34px;
-}
+  .portfolio .company__review .slick-dots {
+    bottom: -34px;
+  }
 
-.portfolio__blocks .review__list:nth-child(n+10) {
-  margin-bottom: 15px;
-}
+  .portfolio__blocks .review__list:nth-child(n+10) {
+    margin-bottom: 15px;
+  }
 }
