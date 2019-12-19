@@ -627,6 +627,7 @@ input[type="radio"].visually-hidden {
   width: 242px;
   height: 28px;
   font-size: 12px;
+  font-weight: 300;
   font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
