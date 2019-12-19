@@ -1089,10 +1089,12 @@ input[type="radio"].visually-hidden {
     font-family: "Ubuntu";
     color: #0b4090;
     font-style: italic;
-    text-decoration: underline;
-    line-height: 1.2;
+    line-height: 16px;
     text-align: center;
-    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #c7d3e6;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -2464,8 +2466,13 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 1075px) {
   .portfolio .company__review-link {
-    width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     margin-top: 8px;
+    border-bottom: 1px solid #c7d3e6;
+    border-radius: 0;
+    line-height: 16px;
   }
   .portfolio__review {
     display: block;
