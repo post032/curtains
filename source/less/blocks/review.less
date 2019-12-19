@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.review__blocks {
+.fav__name.fav__name--positions {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -81,6 +81,7 @@
 .review__write {
   .button-name;
   .button;
+  min-height: 29px;
 }
 
 .review__slider img {
@@ -131,11 +132,14 @@
 .review__list .slick-dotted.slick-slider {
   margin-bottom: 10px;
 }
-
+.review__info {
+display: flex;
+flex-direction: column;
+}
 .review__info .review__info-name {
   .title-min;
   margin-bottom: 0;
-  margin-top: 12px;
+  margin-top: 9px;
 }
 
 .review__about {
@@ -146,13 +150,14 @@
 .review__text {
   .text;
   font-style: italic;
-  margin-top: 8px;
-  margin-bottom: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .review__info a {
   .link;
   font-style: italic;
+      width: max-content;
 }
 
 .review__lists {
@@ -179,6 +184,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 4px;
+  width: 100%;
 }
 
 .review__write-radio div {
@@ -361,7 +367,7 @@
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 44px;
+  top: 7px;
   left: -12px;
   width: 8px;
   height: 8px;
@@ -468,10 +474,12 @@
 
   .review__list {
       width: 220px;
-    margin-bottom: 19px;
+    margin-bottom: 29px;
   }
 
-
+  .review__list:nth-child(n+10) {
+    margin-bottom: 19px;
+  }
   .review__write-submit {
     flex-direction: row;
     margin-left: 15px;
@@ -519,8 +527,14 @@
     display: flex;
     align-items: flex-start;
   }
+
+.review__blocks {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
   .review__radio-input+label::before {
-    left: -18px;
+    left: 7px;
   }
   .review__write {
     display: none;
@@ -534,7 +548,7 @@
     display: none;
   }
 
-  .review__block {
+  .fav__name.fav__name--position {
     margin: 0;
     width: 200px;
   }
@@ -562,7 +576,7 @@
     width: 220px;
   }
 
-  .review__blocks {
+  .fav__name.fav__name--positions {
     flex-direction: column-reverse;
   }
 
@@ -614,11 +628,16 @@
   .review__list {
     width: 220px;
   }
-  .review__blocks {
+  .fav__name.fav__name--positions {
     width: 75%;
   }
 }
-
+  @media (min-width: 1310px) {
+.review__radio-input + label::before {
+  left: -18px;
+  top: 44px;
+}
+}
   @media (min-width: 1310px) {
 
   .review__list,
@@ -656,7 +675,7 @@
     margin-top: 10px;
   }
 
-  .review__block-input {
+  .fav__name.fav__name--position-input {
     width: 490px;
     padding-left: 13px;
   }
@@ -688,8 +707,16 @@
   justify-content: flex-start;
 }
   .review__write-radio div {
-    margin-right: 30px;
+    margin-right: 14px;
       margin-top: 23px;
       margin-left: 15px;
 }
+
+.review__blocks {
+  width: 1167px;
+}
+.review__block {
+  margin: 0;
+}
+
 }

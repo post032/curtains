@@ -1253,7 +1253,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   position: relative;
 }
-.review__blocks {
+.fav__name.fav__name--positions {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1380,6 +1380,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 29px;
 }
 .review__slider img {
   height: 130px;
@@ -1423,6 +1424,15 @@ input[type="radio"].visually-hidden {
 .review__list .slick-dotted.slick-slider {
   margin-bottom: 10px;
 }
+.review__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .review__info .review__info-name {
   font-size: 9px;
   font-family: "Ubuntu";
@@ -1431,7 +1441,7 @@ input[type="radio"].visually-hidden {
   line-height: 1.716;
   font-weight: 500;
   margin-bottom: 0;
-  margin-top: 12px;
+  margin-top: 9px;
 }
 .review__about {
   font-size: 9px;
@@ -1448,8 +1458,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-weight: 300;
   font-style: italic;
-  margin-top: 8px;
-  margin-bottom: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .review__info a {
   font-size: 9px;
@@ -1460,6 +1470,9 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   border-bottom: 1px solid #c7d3e6;
   font-style: italic;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .review__lists {
   margin: 13px 0 0;
@@ -1502,6 +1515,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 4px;
+  width: 100%;
 }
 .review__write-radio div {
   width: 100px;
@@ -1712,7 +1726,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: 44px;
+  top: 7px;
   left: -12px;
   width: 8px;
   height: 8px;
@@ -1828,6 +1842,9 @@ input[type="radio"].visually-hidden {
   }
   .review__list {
     width: 220px;
+    margin-bottom: 29px;
+  }
+  .review__list:nth-child(n+10) {
     margin-bottom: 19px;
   }
   .review__write-submit {
@@ -1879,8 +1896,17 @@ input[type="radio"].visually-hidden {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .review__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .review__radio-input + label::before {
-    left: -18px;
+    left: 7px;
   }
   .review__write {
     display: none;
@@ -1893,7 +1919,7 @@ input[type="radio"].visually-hidden {
   .review__filters::before {
     display: none;
   }
-  .review__block {
+  .fav__name.fav__name--position {
     margin: 0;
     width: 200px;
   }
@@ -1929,7 +1955,7 @@ input[type="radio"].visually-hidden {
   .review__slider img {
     width: 220px;
   }
-  .review__blocks {
+  .fav__name.fav__name--positions {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1998,8 +2024,14 @@ input[type="radio"].visually-hidden {
   .review__list {
     width: 220px;
   }
-  .review__blocks {
+  .fav__name.fav__name--positions {
     width: 75%;
+  }
+}
+@media (min-width: 1310px) {
+  .review__radio-input + label::before {
+    left: -18px;
+    top: 44px;
   }
 }
 @media (min-width: 1310px) {
@@ -2038,7 +2070,7 @@ input[type="radio"].visually-hidden {
     margin-left: 15px;
     margin-top: 10px;
   }
-  .review__block-input {
+  .fav__name.fav__name--position-input {
     width: 490px;
     padding-left: 13px;
   }
@@ -2067,9 +2099,15 @@ input[type="radio"].visually-hidden {
             justify-content: flex-start;
   }
   .review__write-radio div {
-    margin-right: 30px;
+    margin-right: 14px;
     margin-top: 23px;
     margin-left: 15px;
+  }
+  .review__blocks {
+    width: 1167px;
+  }
+  .review__block {
+    margin: 0;
   }
 }
 .article {
@@ -2316,6 +2354,9 @@ input[type="radio"].visually-hidden {
 }
 .portfolio__review .review__filters {
   position: relative;
+}
+.portfolio__reviews .review__block3 {
+  margin: 0;
 }
 .portfolio__block .review__filters::after {
   content: "2";
