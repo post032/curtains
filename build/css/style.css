@@ -146,12 +146,15 @@ input[type="radio"].visually-hidden {
 }
 .link {
   font-size: 9px;
-  line-height: 11px;
+  line-height: 9px;
   font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
   border-bottom: 1px solid #c7d3e6;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .link-t {
   font-size: 16.667px;
@@ -285,12 +288,15 @@ input[type="radio"].visually-hidden {
 }
 .art__info a {
   font-size: 9px;
-  line-height: 11px;
+  line-height: 9px;
   font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
   border-bottom: 1px solid #c7d3e6;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .art__img {
   display: -webkit-box;
@@ -661,12 +667,15 @@ input[type="radio"].visually-hidden {
 }
 .company__info a {
   font-size: 9px;
-  line-height: 11px;
+  line-height: 9px;
   font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
   border-bottom: 1px solid #c7d3e6;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   line-height: 10px;
 }
 .company__idea {
@@ -1353,12 +1362,15 @@ input[type="radio"].visually-hidden {
 }
 .review__filter button {
   font-size: 9px;
-  line-height: 11px;
+  line-height: 9px;
   font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
   border-bottom: 1px solid #c7d3e6;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   text-align: right;
 }
 .review__write {
@@ -1468,7 +1480,7 @@ input[type="radio"].visually-hidden {
 }
 .review__info a {
   font-size: 9px;
-  line-height: 11px;
+  line-height: 9px;
   font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
@@ -2529,12 +2541,15 @@ input[type="radio"].visually-hidden {
   }
   .portfolio__el2 {
     font-size: 9px;
-    line-height: 11px;
+    line-height: 9px;
     font-family: "Ubuntu";
     color: #0b4091;
     text-align: left;
     font-weight: 300;
     border-bottom: 1px solid #c7d3e6;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     font-size: 16.667px;
     line-height: 20px;
   }
@@ -2893,14 +2908,17 @@ input[type="radio"].visually-hidden {
 .fav__del,
 .fav__link {
   font-size: 9px;
-  line-height: 11px;
+  line-height: 9px;
   font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
-  border-bottom: 1px solid #c7d3e6;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   border: none;
   background: #ffffff;
+  border-bottom: 1px solid #c7d3e6;
 }
 .fav__link {
   margin-top: 3px;
@@ -3013,6 +3031,10 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1075px) {
   .favourit__submit .review__write-checkbox-label {
     font-size: 12.5px;
+  }
+  .fav__del,
+  .fav__link {
+    line-height: 16px;
   }
   .fav__art,
   .fav__del,
