@@ -19,20 +19,12 @@ html(lang="ru-Ru")
                     h3 Сортировать:
                     div.fav__sorts
                       span.fav__button
-                        input(type="text" value="по популярности" id="sort" readonly)
+                        input(type="button" value="по популярности" id="sort")
                       div.fav__choise
-                        //- div 
-                        input(type="text" value="по популярности" id="pop" readonly).fav__input
-                          //- p(id="pop") по популярности
-                        //- div 
-                        input(type="text" value="по возрастанию цены" id="up" readonly).fav__input
-                          //- p(id="up") по возрастанию цены
-                        //- div 
-                        input(type="text" value="по убыванию цены" id="down" readonly).fav__input
-                          //- p(id="down") по убыванию цены
-                        //- div 
-                        input(type="text" value="сначала новинки" id="new" readonly).fav__input
-                          //- p(id="new") сначала новинки
+                        input(type="button" value="по популярности" id="pop").fav__input
+                        input(type="button" value="по возрастанию цены" id="up").fav__input
+                        input(type="button" value="по убыванию цены" id="down").fav__input
+                        input(type="button" value="сначала новинки" id="new").fav__input
                   ul.fav__lists
                     li.fav__list.fav__list1
                       p.fav__name ткани в избранном (5)

@@ -23,7 +23,6 @@ $(".review__filters").click(function(){
 $(document).on({
     click : function() {
       $('.fav__choise').slideToggle(100);
-    	return false;
         $('#sort').val($(this).val());
     }
 }, ".fav__input");
