@@ -1774,7 +1774,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   position: absolute;
   top: 7px;
-  left: -12px;
+  left: 7px;
   width: 8px;
   height: 8px;
 }
@@ -1915,6 +1915,9 @@ input[type="radio"].visually-hidden {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: 8px;
+  }
+  .review__write-text textarea {
+    width: 660px;
   }
   .review__submit-input {
     width: 387px;
