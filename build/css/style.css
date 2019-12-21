@@ -3158,7 +3158,6 @@ input[type="radio"].visually-hidden {
     font-weight: 300;
     margin: 0;
   }
-  .fav__choise div p,
   .fav__sort input {
     font-size: 16.667px;
     font-family: "Ubuntu";
@@ -3179,6 +3178,9 @@ input[type="radio"].visually-hidden {
     width: 186px;
     height: 33px;
     padding-right: 20px;
+  }
+  .fav__sort .fav__input {
+    border: none;
   }
   .fav__sorts span {
     position: relative;
