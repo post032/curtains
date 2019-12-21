@@ -2728,10 +2728,10 @@ input[type="radio"].visually-hidden {
 }
 .favourit__item span {
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: -19px;
   color: #5b2c60;
-  font-size: 16px;
+  font-size: 13px;
 }
 .favourit__item a {
   color: #0b4091;
@@ -3322,7 +3322,7 @@ input[type="radio"].visually-hidden {
     margin-top: 4px;
   }
   .fav__del {
-    margin-left: 37px;
+    margin-left: 47px;
     margin-top: 4px;
   }
   .fav__list:not(:first-child) {
@@ -3354,10 +3354,13 @@ input[type="radio"].visually-hidden {
   }
   .fav__del::before,
   .fav__link::before {
-    top: -18px;
+    top: -20px;
   }
   .wrap {
     margin-left: 0;
     margin-right: 0;
+  }
+  .wrap .company__title {
+    margin-bottom: 12px;
   }
 }
