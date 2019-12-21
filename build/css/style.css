@@ -23,7 +23,8 @@ input[type="submit"],
   cursor: pointer;
 }
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="tel"] {
   outline: none;
 }
 .container {
@@ -1590,7 +1591,7 @@ input[type="radio"].visually-hidden {
 }
 .review__write-name span {
   color: #939292;
-  text-transform: lowercase;
+  text-transform: none;
 }
 .review__block-input {
   font-size: 10px;
