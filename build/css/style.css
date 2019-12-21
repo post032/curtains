@@ -3138,6 +3138,10 @@ input[type="radio"].visually-hidden {
     top: 3px;
     left: 1px;
   }
+  .favourit__submit .review__checkbox-input + label::after {
+    top: 2px;
+    left: 2px;
+  }
   .favourit__submit .review__write-checkbox-label br {
     display: none;
   }
