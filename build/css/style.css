@@ -140,7 +140,6 @@ input[type="radio"].visually-hidden {
 .text {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
 }
@@ -151,7 +150,6 @@ input[type="radio"].visually-hidden {
 .link {
   font-size: 9px;
   line-height: 9px;
-  font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
@@ -166,7 +164,6 @@ input[type="radio"].visually-hidden {
 }
 .name {
   font-size: 14px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.935;
@@ -179,7 +176,6 @@ input[type="radio"].visually-hidden {
 }
 .title-min {
   font-size: 9px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.716;
@@ -191,7 +187,6 @@ input[type="radio"].visually-hidden {
 }
 .filter-title {
   font-size: 10px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.2;
@@ -204,7 +199,6 @@ input[type="radio"].visually-hidden {
 }
 .button-name {
   font-size: 12px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.2;
@@ -584,7 +578,6 @@ template {
 }
 .art__info h2 {
   font-size: 14px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.935;
@@ -597,7 +590,6 @@ template {
 .art__info p {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
   margin-top: 2px;
@@ -605,7 +597,6 @@ template {
 .art__info a {
   font-size: 9px;
   line-height: 9px;
-  font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
@@ -806,7 +797,6 @@ template {
 .company__history li p {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
   text-align: left;
@@ -866,7 +856,6 @@ template {
 .company__idea-title,
 .company__video-title {
   font-size: 9px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.716;
@@ -964,7 +953,6 @@ template {
 }
 .company__info h2 {
   font-size: 9px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.716;
@@ -974,7 +962,6 @@ template {
 .company__info p {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
   margin-top: 2px;
@@ -983,7 +970,6 @@ template {
 .company__info a {
   font-size: 9px;
   line-height: 9px;
-  font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
@@ -999,7 +985,6 @@ template {
 .company__idea p {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
 }
@@ -1611,7 +1596,6 @@ template {
 }
 .review__name {
   font-size: 9px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.716;
@@ -1659,7 +1643,6 @@ template {
 }
 .review__filters {
   font-size: 10px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.2;
@@ -1682,7 +1665,6 @@ template {
 .review__filter button {
   font-size: 9px;
   line-height: 9px;
-  font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
@@ -1694,7 +1676,6 @@ template {
 }
 .review__write {
   font-size: 12px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.2;
@@ -1772,7 +1753,6 @@ template {
 }
 .review__info .review__info-name {
   font-size: 9px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.716;
@@ -1783,7 +1763,6 @@ template {
 .review__about {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
   margin: 0;
@@ -1791,7 +1770,6 @@ template {
 .review__text {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
   font-style: italic;
@@ -1801,7 +1779,6 @@ template {
 .review__info a {
   font-size: 9px;
   line-height: 9px;
-  font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
@@ -2028,7 +2005,6 @@ template {
 .review__write-name {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   font-weight: 300;
   text-transform: uppercase;
   font-weight: normal;
@@ -2504,7 +2480,6 @@ template {
 .article__text {
   font-size: 9px;
   line-height: 11px;
-  font-family: "Ubuntu";
   color: #000000;
   font-weight: 300;
   text-indent: 23px;
@@ -2532,7 +2507,6 @@ template {
 }
 .article__title {
   font-size: 14px;
-  font-family: "Ubuntu";
   color: #2c0b2f;
   text-transform: uppercase;
   line-height: 1.935;
@@ -2894,7 +2868,6 @@ template {
   .portfolio__el2 {
     font-size: 9px;
     line-height: 9px;
-    font-family: "Ubuntu";
     color: #0b4091;
     text-align: left;
     font-weight: 300;
@@ -3262,7 +3235,6 @@ template {
 .fav__link {
   font-size: 9px;
   line-height: 9px;
-  font-family: "Ubuntu";
   color: #0b4091;
   text-align: left;
   font-weight: 300;
