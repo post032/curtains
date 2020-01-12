@@ -126,3 +126,133 @@ $('.fav__button').click(function(){
 	$('.fav__choise').slideToggle(300);
 	return false;
 });
+
+function readURL(input) {
+    if ('#one' && '#one'[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#one-img').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(this[0]);
+    }
+}
+
+
+$("#one").change(function () {
+    readURL(this);
+});
+
+// function readURL(input) {
+//     if ('#two' && '#two'[0]) {
+//         var reader = new FileReader();
+//
+//         reader.onload = function (e) {
+//             $('#two-img').attr('src', e.target.result);
+//         }
+//
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
+//
+// $("#two").change(function () {
+//     readURL(this);
+// });
+//
+// function readURL(input) {
+//     if ('#three' && '#three'[0]) {
+//         var reader = new FileReader();
+//
+//         reader.onload = function (e) {
+//             $('#three-img').attr('src', e.target.result);
+//         }
+//
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
+//
+// $("#three").change(function () {
+//     readURL(this);
+// });
+//
+// function readURL(input) {
+//     if ('#four' && '#four'[0]) {
+//         var reader = new FileReader();
+//
+//         reader.onload = function (e) {
+//             $('#four-img').attr('src', e.target.result);
+//         }
+//
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
+//
+// $("#four").change(function () {
+//     readURL(this);
+// });
+//
+// function readURL(input) {
+//     if ('#five' && '#five'[0]) {
+//         var reader = new FileReader();
+//
+//         reader.onload = function (e) {
+//             $('#five-img').attr('src', e.target.result);
+//         }
+//
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
+//
+//
+// $("#five").change(function () {
+//     readURL(this);
+// });
+//
+// function readURL(input) {
+//     if ('#six' && '#six'[0]) {
+//         var reader = new FileReader();
+//
+//         reader.onload = function (e) {
+//             $('#six-img').attr('src', e.target.result);
+//         }
+//
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
+//
+// $("#six").change(function () {
+//     readURL(this);
+// });
+//
+// function readURL(input) {
+//     if ('#seven' && '#seven'[0]) {
+//         var reader = new FileReader();
+//
+//         reader.onload = function (e) {
+//             $('#seven-img').attr('src', e.target.result);
+//         }
+//
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
+//
+// $("#seven").change(function () {
+//     readURL(this);
+// });
+//
+function readURL(input) {
+    if ('#eight' && '#eight'[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#eight-img').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(this[0]);
+    }
+}
+
+$("#eight").change(function () {
+    readURL(this);
+});

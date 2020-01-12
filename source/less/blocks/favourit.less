@@ -197,11 +197,11 @@
   margin-bottom: 10px;
 }
 
-.favourit__review .review__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .favourit__review .review__info {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
 .favourit__review .review__list {
   min-height: 261px;
@@ -217,15 +217,37 @@
 .fav__lists {
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin-top: 13px;
   margin-bottom: 24px;
 }
 
+.fav__tab {
+  display: flex;
+}
 .fav__list {
-  border: 1px rgb(230, 213, 233) solid;
+  border-left: 1px rgb(230, 213, 233) solid;
+  border-right: 1px rgb(230, 213, 233) solid;
+  border-bottom: 1px rgb(230, 213, 233) solid;
+  border-collapse: collapse;
+}
+
+.fav__list1 {
+  border-top: 1px rgb(230, 213, 233) solid;
+}
+
+.fav__info {
+  border-right: 1px rgb(230, 213, 233) solid;
+  border-bottom: 1px rgb(230, 213, 233) solid;
+  border-collapse: collapse;
+  padding-left: 10px;
+}
+
+.fav__img + .fav__cell {
+  border-left: 1px rgb(230, 213, 233) solid;
+  border-collapse: collapse;
+}
+.fav__list {
   display: flex;
   flex-direction: row;
 }
@@ -258,12 +280,12 @@
 
 .fav__hd {
   font-size: 9px;
-  // font-family: "Ubuntu";
   color: rgb(0, 0, 0);
   font-style: italic;
   line-height: 2;
   text-align: left;
   font-weight: 300;
+  vertical-align: top;
 }
 
 .fav__art,
@@ -299,7 +321,8 @@
 }
 
 .fav__link {
-  margin-top: 3px;
+  display: flex;
+  margin-top: 10px;
 }
 
 .fav__del {
@@ -310,7 +333,7 @@
 .fav__info {
   display: flex;
   flex-direction: column;
-  margin-left: 6px;
+  flex-grow: 1;
 }
 
 .favourit__review .company__review-button .favourit__submit-input {
@@ -324,6 +347,10 @@
 @media (min-width: @size-tablet) {
   .favourit__review {
     display: none;
+  }
+
+  .fav__tab-tr {
+    flex-direction: row;
   }
 
   .favourit__blocks {
@@ -354,7 +381,7 @@
     flex-direction: row;
     align-items: flex-start;
     flex-grow: 1;
-    justify-content: space-around;
+      padding-left: 0;
   }
 
   .fav__del {
@@ -363,8 +390,14 @@
 
   .fav__cell {
     border-left: 1px solid #e6d5e9;
-    height: 93%;
-    padding: 10px 10px 0;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-grow: 1;
+  }
+
+  .fav__info > .fav__cell:first-child {
+    border-left: none;
   }
 
   .fav__list1 .fav__name {
@@ -610,7 +643,7 @@
   }
 
   .fav__lists {
-    margin-top: 5px;
+    margin-top: 1px;
   }
 
   .fav__name {
@@ -631,17 +664,25 @@
   }
 
   .fav__cell {
-    padding-left: 17px;
+    padding-left: 19px;
     margin-right: 20px;
+    flex-grow: 0;
   }
 
-  .fav__cell--right {
+  .fav__link {
+    margin-top: 18px;
+  }
+
+  .fav__table {
+    margin-top: 9px;
+  }
+
+  .fav__del {
+    margin-top: 16px;
+  }
+
+  .fav__cell--left {
     margin-right: 60px;
-  }
-
-  .fav__cell--top {
-    padding-top: 20px;
-    height: 83%;
   }
 
   .fav__info {
@@ -650,7 +691,7 @@
   }
 
   .fav__list img {
-    padding: 11px 17px 16px;
+    padding: 11px 14px 14px 13px;
   }
 
   .wrap {
@@ -677,5 +718,9 @@
 
   .wrap .company__title {
     margin-bottom: 12px;
+  }
+
+  .fav__lists .fav__name--position {
+    margin-top: 10px;
   }
 }
