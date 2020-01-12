@@ -144,7 +144,7 @@ $("#one").change(function () {
     readURL(this);
 });
 
-function readURL(input) {
+function readURLTwo(input) {
     if ('#two' && '#two'[0]) {
         var reader = new FileReader();
 
@@ -157,10 +157,10 @@ function readURL(input) {
 }
 
 $("#two").change(function () {
-    readURL(this);
+    readURLTwo(this);
 });
 
-function readURL(input) {
+function readURLThree(input) {
     if ('#three' && '#three'[0]) {
         var reader = new FileReader();
 
@@ -173,10 +173,10 @@ function readURL(input) {
 }
 
 $("#three").change(function () {
-    readURL(this);
+    readURLThree(this);
 });
 
-function readURL(input) {
+function readURLFour(input) {
     if ('#four' && '#four'[0]) {
         var reader = new FileReader();
 
@@ -189,10 +189,10 @@ function readURL(input) {
 }
 
 $("#four").change(function () {
-    readURL(this);
+    readURLFour(this);
 });
 
-function readURL(input) {
+function readURLFive(input) {
     if ('#five' && '#five'[0]) {
         var reader = new FileReader();
 
@@ -206,10 +206,10 @@ function readURL(input) {
 
 
 $("#five").change(function () {
-    readURL(this);
+    readURLFive(this);
 });
 
-function readURL(input) {
+function readURLSix(input) {
     if ('#six' && '#six'[0]) {
         var reader = new FileReader();
 
@@ -222,10 +222,10 @@ function readURL(input) {
 }
 
 $("#six").change(function () {
-    readURL(this);
+    readURLSix(this);
 });
 
-function readURL(input) {
+function readURLSeven(input) {
     if ('#seven' && '#seven'[0]) {
         var reader = new FileReader();
 
@@ -238,10 +238,10 @@ function readURL(input) {
 }
 
 $("#seven").change(function () {
-    readURL(this);
+    readURLSeven(this);
 });
 
-function readURL(input) {
+function readURLEight(input) {
     if ('#eight' && '#eight'[0]) {
         var reader = new FileReader();
 
@@ -254,5 +254,5 @@ function readURL(input) {
 }
 
 $("#eight").change(function () {
-    readURL(this);
+    readURLEight(this);
 });
