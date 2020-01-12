@@ -20,7 +20,6 @@
 
 .favourit__name {
   font-size: 10px;
-  // font-family: "Ubuntu";
   color: rgb(44, 11, 47);
   text-transform: uppercase;
   line-height: 1.3;
@@ -31,19 +30,18 @@
   position: relative;
   font-weight: 500;
 }
-
-.favourit__name::before {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 10px;
-  background: url("../img/arrow.png") no-repeat;
-  background-size: contain;
-  transform: rotate(90deg);
-  position: absolute;
-  right: 1px;
-  top: 5px;
-}
+// .favourit__name::before {
+//   content: "";
+//   display: block;
+//   width: 15px;
+//   height: 10px;
+//   background: url("../img/arrow.png") no-repeat;
+//   background-size: contain;
+//   transform: rotate(90deg);
+//   position: absolute;
+//   right: 1px;
+//   top: 5px;
+// }
 
 .favourit__items {
   margin-left: 5%;
@@ -117,7 +115,6 @@
 
 .favourit__name-input {
   font-size: 10px;
-  // font-family: "Ubuntu";
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   line-height: 1.2;
@@ -231,7 +228,6 @@
   border: 1px rgb(230, 213, 233) solid;
   display: flex;
   flex-direction: row;
-  padding: 10px;
 }
 
 .fav__list1 {
@@ -247,11 +243,11 @@
   width: 112px;
   height: 89px;
   margin-top: 3px;
+  padding: 10px;
 }
 
 .fav__name {
   font-size: 9px;
-  // font-family: "Ubuntu";
   color: rgb(44, 11, 47);
   text-transform: uppercase;
   line-height: 16px;
@@ -357,35 +353,23 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 100%;
+    flex-grow: 1;
+    justify-content: space-around;
   }
 
-  .fav__del,
-  .fav__link,
-  .fav__name,
-  .fav__table {
-    margin-top: 0;
+  .fav__del {
     position: relative;
-    margin-left: 25px;
-    margin-right: 2%;
   }
 
-  .fav__del::before,
-  .fav__link::before,
-  .fav__name::before,
-  .fav__table::before {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 115px;
-    background: #e6d5e9;
-    position: absolute;
-    top: -12px;
-    left: -17px;
+  .fav__cell {
+    border-left: 1px solid #e6d5e9;
+    height: 93%;
+    padding: 10px 10px 0;
   }
 
-  .fav__list1 .fav__name::before {
-    display: none;
+  .fav__list1 .fav__name {
+    border: none;
+    padding: 0;
   }
 
   .wrap {
@@ -393,7 +377,7 @@
     margin-right: 1%;
   }
 }
-@media (min-width: @size-desktop) {
+@media (min-width: 1200px) {
   .favourit__submit .review__write-checkbox-label {
     font-size: 12.5px;
     text-indent: 15px;
@@ -436,9 +420,9 @@
   }
 
   .favourit__submit .review__checkbox-input+label::after {
-      top: 2px;
-      left: 2px;
-    }
+    top: 2px;
+    left: 2px;
+  }
 
   .favourit__submit .review__write-checkbox-label br {
     display: none;
@@ -642,30 +626,31 @@
     background-size: auto;
   }
 
-  .fav__table {
-    margin-left: 50px;
-  }
-
-  .fav__name--position {
-    margin-left: 28px!important;
-  }
-
-  .fav__link {
-    margin-left: 88px;
-    margin-top: 4px;
-  }
-
-  .fav__del {
-    margin-left: 47px;
-    margin-top: 4px;
-  }
-
-  .fav__list:not(:first-child) {
-    padding: 14px 17px;
-  }
-
   .favourit__lists {
     width: 560px;
+  }
+
+  .fav__cell {
+    padding-left: 17px;
+    margin-right: 20px;
+  }
+
+  .fav__cell--right {
+    margin-right: 60px;
+  }
+
+  .fav__cell--top {
+    padding-top: 20px;
+    height: 83%;
+  }
+
+  .fav__info {
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .fav__list img {
+    padding: 11px 17px 16px;
   }
 
   .wrap {
@@ -682,21 +667,7 @@
   }
 
   .favourit__blocks {
-    padding-bottom: 3px;
-  }
-
-  .fav__del::before,
-  .fav__link::before,
-  .fav__name::before,
-  .fav__table::before {
-    top: -15px;
-    left: -17px;
-    height: 120px;
-  }
-
-  .fav__del::before,
-  .fav__link::before {
-    top: -20px;
+    padding-bottom: 7px;
   }
 
   .wrap {
